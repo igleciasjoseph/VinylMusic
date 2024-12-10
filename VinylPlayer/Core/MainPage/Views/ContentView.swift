@@ -6,16 +6,17 @@
 //
 
 import SwiftUI
+import MusicKit
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            VinylPlayerView()
         }
-        .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(
+            Color.cream.ignoresSafeArea(.all)
+        )
     }
 }
 
